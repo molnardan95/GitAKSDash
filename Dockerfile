@@ -11,7 +11,7 @@ RUN pip install -r requirements.txt
 COPY . /app/
 
 # Define environment variables
-ENV dash_port=8080
+ENV dash_port=80
 ENV dash_debug="False"
 
 CMD ["python", "dash-app.py"]
