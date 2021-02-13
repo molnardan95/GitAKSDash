@@ -7,6 +7,7 @@ import plotly.graph_objs as go
 import numpy as np
 
 app = dash.Dash(__name__)
+server = app.server
 
 # +
 # Creating DATA
@@ -73,4 +74,4 @@ def output(n_clicks, number):
 
 
 if __name__ == "__main__":
-    app.run_server()
+    app.run_server(host="0.0.0.0", port=int("8080"), debug=False)
