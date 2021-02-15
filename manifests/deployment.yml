@@ -1,19 +1,19 @@
 apiVersion : apps/v1
 kind: Deployment
 metadata:
-  name: molnardangitaksdash 
+  name: molnardangitaksdash-deploy 
 spec:
   replicas: 1
   selector:
     matchLabels:
-      app: molnardangitaksdash
+      app: molnardangitaksdash-deploy
   template:
     metadata:
       labels:
-        app: molnardangitaksdash 
+        app: molnardangitaksdash-deploy
     spec:
       containers:
-        - name: molnardangitaksdash 
+        - name: molnardangitaksdash-container
           image: molnadaaksregistry.azurecr.io/molnardangitaksdash
           ports:
-          - containerPort: 8080
+          - containerPort: 80
