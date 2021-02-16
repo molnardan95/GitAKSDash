@@ -16,7 +16,7 @@ variables:
   imageRepository: 'molnardangitaksdash'
   containerRegistry: 'molnadaaksregistry.azurecr.io'
   dockerfilePath: '**/Dockerfile'
-  tag: 'latest'
+  tag: '$(Build.BuildId)'
   imagePullSecret: 'molnadaaksregistry133588a5-auth'
 
   # Agent VM image name
