@@ -16,4 +16,4 @@ spec:
         - name: molnardangitaksdash-container
           image: molnadaaksregistry.azurecr.io/molnardangitaksdash
           ports:
-          - containerPort: 80
+          - containerPort: 8050
