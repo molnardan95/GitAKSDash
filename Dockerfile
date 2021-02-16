@@ -10,4 +10,4 @@ RUN pip install -r requirements.txt
 # Copy application code to the image
 COPY . /app/
 
-CMD ["python", "dash-app.py"]
+CMD ["python", "app.py"]
